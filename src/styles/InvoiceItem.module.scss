@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    gap:20px;
+    background: white;
+    color: black !important;
+    width:100%;
+    padding: 12px 24px;
+    justify-content: space-between;
+    transition: 0.2s ease;
+    &:hover{
+        opacity: 0.6;
+    }
+    .billId{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #646464;
+    }
+    .retailerName, .pendingAmount{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #727272;
+    }
+    .invoiceAmount{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}

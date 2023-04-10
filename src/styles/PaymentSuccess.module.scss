@@ -1,0 +1,86 @@
+.container{
+    padding: 10px 45px;
+    background: #188748;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 400px;
+    animation:0.4s fadeIn forwards;
+    section{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        img{
+            animation: enlarge 1.5s forwards ;
+            animation-delay: 500ms;
+        }
+        .retailerInfo{
+            border-bottom: 1px dashed #F4F4F4;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .billNo{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+            }
+            .amountPaid{
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 40px;
+            }
+            .retailerName{
+                margin-top: 30px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .paymentMode{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+    }
+    .note{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+}
+
+@keyframes fadeIn {
+   0%{
+    transform: translateY(100%);
+    opacity: 0;
+   }
+   90%{
+    transform:translateY(-1%)
+   }
+   100%{
+    transform: translateY(0%);
+    opacity: 1;
+   }
+}
+@keyframes enlarge {
+    0%{
+        transform: scale(0);
+        opacity:0;
+       }
+       90%{
+        transform:sacle(1.2);
+       }
+       100%{
+        transform: translateY(1);
+        opacity: 1;
+       }
+}

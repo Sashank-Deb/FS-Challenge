@@ -1,0 +1,51 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 400px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ECECEC;
+}
+.invoicesContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapper{
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(67deg, black, #5666b5);
+  transition: 0.4s ease;
+	background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+  gap :24px;
+
+  button{
+    padding: 10px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    span{
+      display: inline-block;
+      transition: 0.4s ease;
+    }
+    &:hover span{
+      transform: translateX(4px);
+      
+    }
+  }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
